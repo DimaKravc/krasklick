@@ -1,0 +1,208 @@
+{% extends "layout.html" %}
+
+{% import 'macros/header.html' as header %}
+
+{% block content %}
+{{ header.init(cabinet.header) }}
+<div class="page-header container">
+    <div class="page-header__row">
+        <ol class="breadcrumb">
+            <li><a href="#">Главная</a></li>
+            <li class="active">кабинет</li>
+        </ol>
+    </div>
+    <div class="page-header__row">
+        <h1 class="page-header__title">мои данные</h1>
+    </div>
+</div>
+<div class="user-data">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="user-data__item">
+                    <span class="i-user-data-1"></span>
+                    <div class="user-data__info">
+                        <span class="user-data__label">ФИО/Название салона:</span>
+                        <span class="user-data__value">Хлоя Беннет Джонсон</span>
+                    </div>
+                </div>
+                <div class="user-data__item">
+                    <span class="i-user-data-4"></span>
+                    <div class="user-data__info">
+                        <span class="user-data__label">E-mail:</span>
+                        <span class="user-data__value">hloya@mail.com</span>
+                    </div>
+                </div>
+                <div class="user-data__item">
+                    <span class="i-user-data-5"></span>
+                    <div class="user-data__info">
+                        <span class="user-data__label">Телефон:</span>
+                        <span class="user-data__value">+77789988766788</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="user-data__link"><span class="i-setting"></span> Редактировать</a>
+    </div>
+</div>
+<div class="page-content container">
+    <ul class="tab-list">
+        <li class="tab-list__item active">
+            <a href="#ads" data-toggle="tab">
+                мои объявления
+            </a>
+        </li>
+        <li class="tab-list__item">
+            <a href="#orders" data-toggle="tab">
+                история заказов
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="ads">
+            <div class="ad-list">
+                <div class="ad-list__item">
+                    <div class="ad-list__row">
+                        <div class="ad-list__cat ad-list__col">
+                            <a href="#">Стрижка и уход</a>
+                        </div>
+                        <div class="ad-list__col"><!--instead colspan--></div>
+                        <div class="ad-list__col"><!--instead colspan--></div>
+                        <div class="ad-list__utils-menu ad-list__col">
+                            <a href="#"><span class="i-setting-gray"></span></a>
+                            <a href="#"><span class="i-trash"></span></a>
+                        </div>
+                    </div>
+                    <div class="ad-list__row">
+                        <div class="ad-list__figure ad-list__col">
+                            <img src="assets/img/hair01.jpg" alt="">
+                        </div>
+                        <div class="ad-list__content ad-list__col">
+                            <h3><a href="#">The Fashion for winter</a></h3>
+                            <p>Explore a curated selection of unexpectedmen's,
+                                women's, home, art and tech accessories from
+                                the world's most exciting designers on Fab.com.
+                                Shop Fab now.</p>
+                        </div>
+                        <div class="ad-list__info ad-list__col">
+                            <dl>
+                                <dt>Адрес:</dt>
+                                <dd>г москва ул. троицкая д.17/1</dd>
+                            </dl>
+                        </div>
+                        <div class="ad-list__price ad-list__col">
+                            <strong>1.000 руб</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad-list__item">
+                    <div class="ad-list__row">
+                        <div class="ad-list__cat ad-list__col">
+                            <a href="#">Стрижка и уход</a>
+                        </div>
+                        <div class="ad-list__col"><!--instead colspan--></div>
+                        <div class="ad-list__col"><!--instead colspan--></div>
+                        <div class="ad-list__utils-menu ad-list__col">
+                            <a href="#"><span class="i-setting-gray"></span></a>
+                            <a href="#"><span class="i-trash"></span></a>
+                        </div>
+                    </div>
+                    <div class="ad-list__row">
+                        <div class="ad-list__figure ad-list__col">
+                            <img src="assets/img/hair01.jpg" alt="">
+                        </div>
+                        <div class="ad-list__content ad-list__col">
+                            <h3><a href="#">The Fashion for winter</a></h3>
+                            <p>Explore a curated selection of unexpectedmen's,
+                                women's, home, art and tech accessories from
+                                the world's most exciting designers on Fab.com.
+                                Shop Fab now.</p>
+                        </div>
+                        <div class="ad-list__info ad-list__col">
+                            <dl>
+                                <dt>Адрес:</dt>
+                                <dd>г москва ул. троицкая д.17/1</dd>
+                            </dl>
+                        </div>
+                        <div class="ad-list__price ad-list__col">
+                            <strong>1.000 руб</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad-list__item">
+                    <div class="ad-list__row">
+                        <div class="ad-list__cat ad-list__col">
+                            <a href="#">Стрижка и уход</a>
+                        </div>
+                        <div class="ad-list__col"><!--instead colspan--></div>
+                        <div class="ad-list__col"><!--instead colspan--></div>
+                        <div class="ad-list__utils-menu ad-list__col">
+                            <a href="#"><span class="i-setting-gray"></span></a>
+                            <a href="#"><span class="i-trash"></span></a>
+                        </div>
+                    </div>
+                    <div class="ad-list__row">
+                        <div class="ad-list__figure ad-list__col">
+                            <img src="assets/img/hair01.jpg" alt="">
+                        </div>
+                        <div class="ad-list__content ad-list__col">
+                            <h3><a href="#">The Fashion for winter</a></h3>
+                            <p>Explore a curated selection of unexpectedmen's,
+                                women's, home, art and tech accessories from
+                                the world's most exciting designers on Fab.com.
+                                Shop Fab now.</p>
+                        </div>
+                        <div class="ad-list__info ad-list__col">
+                            <dl>
+                                <dt>Адрес:</dt>
+                                <dd>г москва ул. троицкая д.17/1</dd>
+                            </dl>
+                        </div>
+                        <div class="ad-list__price ad-list__col">
+                            <strong>1.000 руб</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="orders">
+            <div class="ad-list">
+                <div class="ad-list__item">
+                    <div class="ad-list__row">
+                        <div class="ad-list__cat ad-list__col">
+                            <a href="#">Стрижка и уход</a>
+                        </div>
+                        <div class="ad-list__col"><!--instead colspan--></div>
+                        <div class="ad-list__col"><!--instead colspan--></div>
+                        <div class="ad-list__utils-menu ad-list__col">
+                            <a href="#"><span class="i-setting-gray"></span></a>
+                            <a href="#"><span class="i-trash"></span></a>
+                        </div>
+                    </div>
+                    <div class="ad-list__row">
+                        <div class="ad-list__figure ad-list__col">
+                            <img src="assets/img/hair01.jpg" alt="">
+                        </div>
+                        <div class="ad-list__content ad-list__col">
+                            <h3><a href="#">The Fashion for winter</a></h3>
+                            <p>Explore a curated selection of unexpectedmen's,
+                                women's, home, art and tech accessories from
+                                the world's most exciting designers on Fab.com.
+                                Shop Fab now.</p>
+                        </div>
+                        <div class="ad-list__info ad-list__col">
+                            <dl>
+                                <dt>Адрес:</dt>
+                                <dd>г москва ул. троицкая д.17/1</dd>
+                            </dl>
+                        </div>
+                        <div class="ad-list__price ad-list__col">
+                            <strong>1.000 руб</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

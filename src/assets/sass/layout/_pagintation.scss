@@ -1,0 +1,147 @@
+/**
+ * Pagination
+ */
+
+.pagination-wrap {
+    text-align: center;
+}
+
+.pagination {
+    &__inner {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__item {
+        display: inline-block;
+        vertical-align: middle;
+
+        > a,
+        > span {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1px solid #d8d8d8;
+            margin: 0 6px;
+            line-height: 48px;
+            padding: 0;
+            color: #959595;
+            @include font-size(22.17px);
+            display: block;
+            text-decoration: none;
+
+            &:hover,
+            &:focus {
+                color: #959595;
+                background-color: #eee;
+            }
+        }
+        &.active {
+            > a,
+            > span {
+                background: $accent-color;
+                border-color: $accent-color;
+                color: #FFFFFF;
+
+                &:hover,
+                &:focus {
+                    background: $accent-color;
+                    border-color: $accent-color;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        &.disabled {
+            &:first-child {
+                > a {
+                    cursor: default;
+
+                    > span {
+                        background-position: 0 -96px;
+                    }
+                }
+            }
+            &:last-child {
+                > a {
+                    cursor: default;
+
+                    > span {
+                        background-position: -42px -96px;
+                    }
+                }
+            }
+        }
+        &_tar_prev,
+        &_tar_next {
+            > a {
+                border: none;
+                position: relative;
+                margin-right: 0;
+                width: 30px !important;
+
+                > span {
+                    font: 0px/0 a;
+                    width: 14px;
+                    height: 22px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    background: url("../img/sprite.png") -14px -96px;
+                }
+                &:hover {
+                    background: transparent;
+                }
+            }
+        }
+        &_tar_next {
+            > a {
+                margin-left: 0;
+
+                > span {
+                    background-position: -28px -96px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .pagination {
+        max-height: 44px;
+        overflow: hidden;
+        white-space: nowrap;
+
+        &__inner {
+            max-width: 330px;
+            overflow: auto;
+            vertical-align: top;
+            padding-bottom: 20px;
+        }
+        &__item {
+            vertical-align: top;
+
+            > a,
+            > span {
+                width: 44px;
+                height: 44px;
+                margin: 0 5px;
+                line-height: 44px;
+                @include font-size(21px);
+            }
+            &_tar_prev,
+            &_tar_next {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .pagination {
+        &__inner {
+            max-width: 300px;
+        }
+    }
+}

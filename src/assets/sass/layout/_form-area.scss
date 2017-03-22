@@ -1,0 +1,30 @@
+/**
+ * Form area
+ */
+
+.form-area {
+    background-color: #f6f6f6;
+    padding: 60px 0;
+
+    &_type_reg {
+        padding: 35px 0;
+    }
+    &__bottom {
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-area {
+        padding: 40px 0;
+
+        &__bottom {
+            margin-top: 25px;
+
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+}

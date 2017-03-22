@@ -1,0 +1,48 @@
+/**
+ * Tab list
+ */
+
+.tab-list {
+    padding-left: 0;
+    @include clearfix();
+
+    &__item {
+        float: left;
+        list-style-type: none;
+        padding-bottom: 7px;
+        margin-bottom: 22px;
+        transition: box-shadow .13s ease-in;
+
+        &:last-child {
+            margin-left: 48px;
+        }
+        a {
+            font-family: $bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #000000;
+            text-decoration: none;
+        }
+        &.active {
+            box-shadow: 0 -1px 0 0 #6c6c6c inset;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .tab-list {
+        max-width: 360px;
+        margin: auto;
+
+        &__item {
+            &:last-child {
+                float: right;
+                margin-left: 0;
+            }
+
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+}

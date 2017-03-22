@@ -1,0 +1,130 @@
+{% extends "layout.html" %}
+
+{% import 'macros/header.html' as header %}
+
+{% block content %}
+{{ header.init(cabinet.header) }}
+<div class="page-header container">
+    <div class="page-header__row">
+        <ol class="breadcrumb">
+            <li><a href="#">Главная</a></li>
+            <li class="active">регистрация</li>
+        </ol>
+    </div>
+    <div class="page-header__row">
+        <h1 class="page-header__title">регистрация</h1>
+    </div>
+</div>
+<div class="page-content">
+    <div class="form-area form-area_type_reg">
+        <div class="container">
+            <div class="reg">
+                <div class="reg__step1">
+                    <ul class="reg__tabs">
+                        <li class="reg__tabs-item">
+                            <a href="#guest-form" data-toggle="tab" aria-expanded="false"><span class="reg-status"></span> Как гость</a>
+                        </li>
+                        <li class="reg__tabs-item active">
+                            <a href="#master-form" data-toggle="tab" aria-expanded="true"><span class="reg-status"></span> Как мастер</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reg__step2">
+                    <div class="reg__caption">Войти через соц сеть:</div>
+                    <ul class="reg-social-list">
+                        <li class="reg-social-list__item">
+                            <a href="#" class="via-vk"><span class="i-vk-color"></span> Войти через Вконтакте</a>
+                        </li>
+                        <li class="reg-social-list__item">
+                            <a href="#" class="via-fb"><span class="i-fb-color"></span> Войти через Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="reg__caption">Или зарегестрируйтесь:</div>
+                    <div class="tab-content">
+                        <div class="tab-pane" id="guest-form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="name">ФИО/Название салона:</label>
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="email">E-mail:</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="pass">Пароль:</label>
+                                            <input type="password" class="form-control" id="pass">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="r-password">Повторите пароль:</label>
+                                            <input type="password" class="form-control" id="r-password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-area__bottom">
+                                    <button type="submit" class="btn dark">готово</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane active" id="master-form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="name">ФИО/Название салона:</label>
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="email">E-mail:</label>
+                                            <input type="email" class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="pass">Пароль:</label>
+                                            <input type="password" class="form-control" id="pass">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="r-password">Повторите пароль:</label>
+                                            <input type="password" class="form-control" id="r-password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            <label for="phone">Телефон:</label>
+                                            <input type="tel" class="form-control" id="phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-area__bottom">
+                                    <button type="submit" class="btn dark">готово</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

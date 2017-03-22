@@ -1,0 +1,51 @@
+/**
+ * Site header
+ */
+
+.site-header {
+    box-shadow: 0 1px 1px 0 #dadada;
+
+    &__navbar {
+        float: left;
+        @include clearfix();
+    }
+    &__navbar-collapse {
+        float: right;
+        @include clearfix();
+    }
+}
+
+.navbar-toggle {
+    background: $accent-color;
+}
+
+@media (min-width: 768px) {
+    .site-header {
+        &__navbar-collapse {
+            display: block !important;
+            height: auto !important;
+            overflow: visible !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .site-header {
+        &__navbar {
+            float: none;
+            margin-left: 0;
+        }
+        &__navbar-collapse {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0 15px;
+            border-bottom: 1px solid #ccccac;
+            background: #FFFFFF;
+            z-index: 100;
+        }
+    }
+}

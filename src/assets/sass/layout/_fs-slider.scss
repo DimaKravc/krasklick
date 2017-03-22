@@ -1,0 +1,41 @@
+/**
+ * Full screen slider
+ */
+
+.fs-slider {
+    &__cat {
+        a {
+            font-size: 23px !important;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-family: $extra-light;
+        }
+    }
+    &__title {
+        a {
+            font-size: 39px !important;
+            color: #FFFFFF;
+            font-family: $bold;
+            text-transform: uppercase;
+            line-height: normal !important;
+        }
+    }
+    &__btn {
+        display: inline-block;
+        min-width: 200px;
+        height: 40px;
+        font-size: 17px !important;
+        line-height: 38px !important;
+        border: 2px solid #FFFFFF !important;
+        text-align: center !important;
+        padding: 0 10px !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #FFFFFF;
+
+        &:hover {
+            color: #FFFFFF;
+            text-decoration: none !important;
+        }
+    }
+}

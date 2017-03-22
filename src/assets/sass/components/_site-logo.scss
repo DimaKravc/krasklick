@@ -1,0 +1,26 @@
+/**
+ * Site logo
+ */
+
+.site-logo {
+    margin: 30px 15px 30px 0;
+    float: left;
+
+    h1 {
+        margin-bottom: 0;
+        line-height: 1;
+    }
+    a {
+        @include font-size(33px);
+        line-height: 1;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $base-color;
+        font-family: $regular;
+        display: inline-block;
+    }
+    .accent-color {
+        color: $accent-color;
+        font-family: $bold;
+    }
+}

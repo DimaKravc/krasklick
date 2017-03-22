@@ -1,0 +1,242 @@
+{% extends "layout.html" %}
+
+{% import 'macros/header.html' as header %}
+
+{% block content %}
+{{ header.init(services.header) }}
+<div class="filter">
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="filter__col-1">
+                    <div class="form-group">
+                        <label for="city">Выберите город</label>
+                        <select class="form-control" id="city">
+                            <option selected disabled hidden style='display: none' value=''></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter__col-2">
+                    <div class="form-group">
+                        <label for="subway">Выберите станцию метро</label>
+                        <select class="form-control" id="subway">
+                            <option selected disabled hidden style='display: none' value=''></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter__col-3 range-slider-wrapper">
+                    <div class="form-group">
+                        <label for="amount">выберите цену</label>
+                        <div class="range-slider"></div>
+                        <input type="text" id="amount" readonly>
+                    </div>
+                </div>
+                <div class="filter__col-4">
+                    <button class="filter__btn" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> найти</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="page-header container">
+    <div class="page-header__row delimiter">
+        <ul class="breadcrumb">
+            <li><a href="#">Главная</a></li>
+            <li class="active">стрижка и уход</li>
+        </ul>
+        <div class="page-header__pull-right">
+            <ul class="view-type hidden-xs">
+                <li class="view-type__item"><a class="active" href="#" data-js="ser-toggle"><span class="i-list"></span></a></li>
+                <li class="view-type__item"><a href="#" data-js="ser-toggle"><span class="i-grid"></span></a></li>
+            </ul>
+            <div class="sort-type">
+                <label for="sort-type">Сортировка: </label>
+                <select class="sort-type__select" id="sort-type">
+                    <option value="price_asc" selected>Цена по возрастанию</option>
+                    <option value="price_desc">Цена по убыванию</option>
+                    <option value="by_rating">По рейтингу</option>
+                    <option value="by_popularity">По популярности</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="page-header__row">
+        <h1 class="page-header__title">стрижка и уход</h1>
+    </div>
+</div>
+<div class="page-content container">
+    <div class="ser-list" data-js="ser-view">
+        <div class="row">
+            <div class="ser-list__item">
+                <div class="ser-list__row">
+                    <div class="ser-list__figure ser-list__col">
+                        <a href="#">
+                            <img src="assets/img/ser01.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="ser-list__content ser-list__col">
+                        <h3><a href="#">The Fashion for winter</a></h3>
+                        <p>Explore a curated selection of unexpected men's, women's, home, art and tech
+                            accessories from the world's most exciting designers on Fab.com.
+                            Shop Fab now.</p>
+                        <dl>
+                            <dt>Адрес:</dt>
+                            <dd>г москва ул. троицкая д.17/1</dd>
+                        </dl>
+                        <div>
+                            <div class="rate-stars">
+                                <div class="fill" style="width: 20%"></div>
+                            </div>
+                            <a class="ser-list__comments-link" href="#">
+                                <span class="i-comments"></span>
+                                <span>8 комментариев</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ser-list__total ser-list__col">
+                        <strong>1.000 руб</strong>
+                        <a href="#" class="ser-list__btn">оплатить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ser-list__item">
+                <div class="ser-list__row">
+                    <div class="ser-list__figure ser-list__col">
+                        <a href="#">
+                            <img src="assets/img/ser02.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="ser-list__content ser-list__col">
+                        <h3><a href="#">The Fashion for winter</a></h3>
+                        <p>Explore a curated selection of unexpected men's, women's, home, art and tech
+                            accessories from the world's most exciting designers on Fab.com.
+                            Shop Fab now.</p>
+                        <dl>
+                            <dt>Адрес:</dt>
+                            <dd>г москва ул. троицкая д.17/1</dd>
+                        </dl>
+                        <div>
+                            <div class="rate-stars">
+                                <div class="fill" style="width: 40%"></div>
+                            </div>
+                            <a class="ser-list__comments-link" href="#">
+                                <span class="i-comments"></span>
+                                <span>8 комментариев</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ser-list__total ser-list__col">
+                        <strong>1.000 руб</strong>
+                        <a href="#" class="ser-list__btn">оплатить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ser-list__item">
+                <div class="ser-list__row">
+                    <div class="ser-list__figure ser-list__col">
+                        <a href="#">
+                            <img src="assets/img/ser03.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="ser-list__content ser-list__col">
+                        <h3><a href="#">The Fashion for winter</a></h3>
+                        <p>Explore a curated selection of unexpected men's, women's, home, art and tech
+                            accessories from the world's most exciting designers on Fab.com.
+                            Shop Fab now.</p>
+                        <dl>
+                            <dt>Адрес:</dt>
+                            <dd>г москва ул. троицкая д.17/1</dd>
+                        </dl>
+                        <div>
+                            <div class="rate-stars">
+                                <div class="fill" style="width: 50%"></div>
+                            </div>
+                            <a class="ser-list__comments-link" href="#">
+                                <span class="i-comments"></span>
+                                <span>8 комментариев</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ser-list__total ser-list__col">
+                        <strong>1.000 руб</strong>
+                        <a href="#" class="ser-list__btn">оплатить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ser-list__item">
+                <div class="ser-list__row">
+                    <div class="ser-list__figure ser-list__col">
+                        <a href="#">
+                            <img src="assets/img/ser04.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="ser-list__content ser-list__col">
+                        <h3><a href="#">The Fashion for winter</a></h3>
+                        <p>Explore a curated selection of unexpected men's, women's, home, art and tech
+                            accessories from the world's most exciting designers on Fab.com.
+                            Shop Fab now.</p>
+                        <dl>
+                            <dt>Адрес:</dt>
+                            <dd>г москва ул. троицкая д.17/1</dd>
+                        </dl>
+                        <div>
+                            <div class="rate-stars">
+                                <div class="fill" style="width: 80%"></div>
+                            </div>
+                            <a class="ser-list__comments-link" href="#">
+                                <span class="i-comments"></span>
+                                <span>8 комментариев</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ser-list__total ser-list__col">
+                        <strong>1.000 руб</strong>
+                        <a href="#" class="ser-list__btn">оплатить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ser-list__item">
+                <div class="ser-list__row">
+                    <div class="ser-list__figure ser-list__col">
+                        <a href="#">
+                            <img src="assets/img/ser05.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="ser-list__content ser-list__col">
+                        <h3><a href="#">The Fashion for winter</a></h3>
+                        <p>Explore a curated selection of unexpected men's, women's, home, art and tech
+                            accessories from the world's most exciting designers on Fab.com.
+                            Shop Fab now.</p>
+                        <dl>
+                            <dt>Адрес:</dt>
+                            <dd>г москва ул. троицкая д.17/1</dd>
+                        </dl>
+                        <div>
+                            <div class="rate-stars">
+                                <div class="fill" style="width: 100%"></div>
+                            </div>
+                            <a class="ser-list__comments-link" href="#">
+                                <span class="i-comments"></span>
+                                <span>8 комментариев</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ser-list__total ser-list__col">
+                        <strong>1.000 руб</strong>
+                        <a href="#" class="ser-list__btn">оплатить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'partials/pagination.html' %}
+</div>
+{% endblock %}

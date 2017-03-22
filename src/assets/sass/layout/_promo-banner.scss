@@ -1,0 +1,105 @@
+/**
+ * Promo banner
+ */
+
+.promo-banner {
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50px;
+
+    .site-logo {
+        a,
+        a span {
+            color: #FFFFFF;
+            font-family: $bold;
+        }
+    }
+    &__content {
+        text-align: center;
+        color: #FFFFFF;
+        margin: 45px 0;
+    }
+    &__caption {
+        display: block;
+        @include font-size(27px);
+        font-family: $extra-light;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+
+        &-lead {
+            display: block;
+            @include font-size(54px);
+            font-family: $bold;
+            font-weight: normal;
+            margin: 10px 0;
+        }
+    }
+    &__btn {
+        display: inline-block;
+        min-width: 234px;
+        @include font-size(20px);
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        padding: 10px 15px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .promo-banner {
+        [class*="i-services-"] {
+            background-position: 0 -31px;
+        }
+        .i-services-2 {
+            background-position: -17px -31px;
+        }
+        .i-services-3 {
+            background-position: -37px -31px;
+        }
+        .i-services-4 {
+            background-position: -69px -31px;
+        }
+        .i-services-5 {
+            background-position: -88px -31px;
+        }
+        .i-services-6 {
+            background-position: -121px -31px;
+        }
+        .site-auth-menu {
+            &__item {
+                a {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .promo-banner {
+        padding-bottom: 30px;
+
+        &__content {
+            margin: 25px 0;
+        }
+        &__caption {
+            margin-bottom: 25px;
+            @include font-size(22px);
+
+            &-lead {
+                @include font-size(42px);
+            }
+        }
+        &__btn {
+            min-width: 190px;
+            @include font-size(16px);
+            padding: 8px 15px;
+        }
+    }
+}

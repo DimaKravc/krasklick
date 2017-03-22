@@ -1,0 +1,31 @@
+/**
+ * Sort type
+ */
+
+.sort-type {
+    float: right;
+
+    label {
+        color: #6a6a6a;
+        margin-bottom: 0;
+        margin-right: 15px;
+        @include font-size(16px);
+    }
+    &__select {
+        border: none;
+        background: transparent;
+    }
+}
+
+@media (max-width: 767px) {
+    .sort-type {
+        float: none;
+        clear: both;
+        padding-top: 15px;
+
+        label,
+        &__selct {
+            font-size: 14px;
+        }
+    }
+}

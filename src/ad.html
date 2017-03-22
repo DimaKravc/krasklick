@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% import 'macros/header.html' as header %}
+
+{% block content %}
+{{ header.init(cabinet.header) }}
+<div class="page-header container">
+    <div class="page-header__row">
+        <ol class="breadcrumb">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">кабинет</a></li>
+            <li class="active">Подать объявление</li>
+        </ol>
+    </div>
+    <div class="page-header__row">
+        <h1 class="page-header__title">Подать объявление</h1>
+    </div>
+</div>
+<div class="page-content">
+    <div class="form-area">
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="cat">Категория:</label>
+                            <select class="form-control" id="cat">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="address">Адрес:</label>
+                            <input type="text" class="form-control" id="address">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="caption">Заголовок:</label>
+                            <input type="text" class="form-control" id="caption">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="price">Цена (руб.)</label>
+                            <input type="text" class="form-control" id="price">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="description">Описание:</label>
+                            <textarea class="form-control" id="description" rows="6"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label>Фото \ Картинка:</label>
+                            <input type="file" class="input-file" id="img">
+                            <label for="img">
+                            <span class="circle">
+                                <span></span>
+                                <span></span>
+                            </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-area__bottom">
+                    <button type="submit" class="btn dark">опубликовать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+/**
+ * View type
+ */
+
+.view-type {
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 0;
+
+    &__item {
+        list-style-type: none;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 5px;
+
+        .active {
+            .i-list {
+                background-position: -60px -78px;
+            }
+            .i-grid {
+                background-position: -20px -78px;
+            }
+        }
+    }
+}
+
+.i-list {
+    display: block;
+    width: 20px;
+    height: 17px;
+    background: url("../img/sprite.png") -40px -78px;
+}
+
+.i-grid {
+    display: block;
+    width: 20px;
+    height: 17px;
+    background: url("../img/sprite.png") 0 -78px;
+}

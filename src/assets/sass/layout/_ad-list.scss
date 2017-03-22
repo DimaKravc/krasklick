@@ -1,0 +1,154 @@
+/**
+ * Ad list
+ */
+
+.ad-list {
+    &__item {
+        padding: 15px 0;
+        border-top: 1px solid #dedede;
+    }
+    &__figure {
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__content {
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .ad-list {
+        display: table;
+        width: 100%;
+
+        &__item {
+            padding-bottom: 30px;
+        }
+        &__row {
+            display: table-row;
+        }
+        &__col {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        &__cat {
+            @include font-size(17px);
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        &__utils-menu {
+            text-align: right;
+            vertical-align: top;
+        }
+        &__figure {
+            vertical-align: top;
+            width: 15.5%;
+            padding-right: 15px;
+        }
+        &__content {
+            vertical-align: top;
+            width: 35%;
+            padding-right: 15px;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+        &__info {
+            padding-left: 50px;
+            padding-right: 20px;
+
+            dl {
+                margin-bottom: 0;
+            }
+            dt,
+            dd {
+                display: inline-block;
+            }
+        }
+        &__price {
+            @include font-size(19px);
+        }
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .ad-list {
+        &__figure {
+            width: 20%;
+        }
+        &__info {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .ad-list {
+        &__figure {
+            width: 25%;
+        }
+        &__content {
+            h3 {
+                @include font-size(18px);
+            }
+            p {
+                @include font-size(15px);
+            }
+        }
+        &__info {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .ad-list {
+        &__item {
+            max-width: 360px;
+            margin: auto;
+        }
+        &__row {
+            margin-bottom: 14px;
+            @include clearfix();
+        }
+        &__cat {
+            float: left;
+        }
+        &__utils-menu {
+            float: right;
+        }
+        &__figure {
+            margin-bottom: 15px;
+        }
+        &__content {
+            p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.i-setting-gray {
+    display: inline-block;
+    width: 19px;
+    height: 20px;
+    background: url("../img/sprite.png") -93px -16px no-repeat;
+    margin: 0 4px;
+}
+
+.i-trash {
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    background: url("../img/sprite.png") -93px -38px no-repeat;
+    margin: 0 4px;
+}

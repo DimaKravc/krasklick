@@ -1,0 +1,54 @@
+/**
+ * Registration social list
+ */
+
+.reg-social-list {
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    &__item {
+        list-style-type: none;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px;
+
+        a {
+            overflow: hidden;
+            position: relative;
+            display: block;
+            color: #FFFFFF;
+            padding: 15px 15px 15px 65px;
+            border-radius: 4px;
+            text-decoration: none;
+            min-width: 255px;
+
+            span[class*="i-"] {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    .via-vk {
+        background-color: #4c75a3;
+    }
+    .via-fb {
+        background-color: #48629b;
+    }
+}
+
+.i-vk-color,
+.i-fb-color {
+    display: inline-block;
+    vertical-align: middle;
+    width: 47px;
+    height: 47px;
+    background: url("../img/sprite.png") -112px 0;
+}
+
+.i-fb-color {
+    background-position: -112px -47px;
+}
+

@@ -1,0 +1,13 @@
+/**
+ * Site footer
+ */
+
+.site-footer {
+    display: table-row;
+    background: #373737;
+
+    &__bottom {
+        background-color: #272727;
+        text-align: center;
+    }
+}

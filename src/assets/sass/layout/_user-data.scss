@@ -1,0 +1,100 @@
+/**
+ * User data
+ */
+
+.user-data {
+    background-color: #f6f6f6;
+    margin-bottom: 45px;
+
+    > .container {
+        position: relative;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    &__item {
+        margin-left: 50px;
+        margin-bottom: 30px;
+        font-family: $medium;
+        white-space: nowrap;
+    }
+    &__info {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 80%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__label {
+        color: #000000;
+    }
+    &__value {
+        color: #3c3c3c;
+    }
+    [class*="i-user-data-"] {
+        margin-right: 7px;
+        margin-top: -1px;
+    }
+    &__link {
+        position: absolute;
+        right: 40px;
+        bottom: 20px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+[class*="i-user-data-"] {
+    width: 43px;
+    height: 43px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../img/user-data-icon.png") 0 0 no-repeat;
+}
+
+.i-user-data-2 {
+    background-position: -43px 0;
+}
+
+.i-user-data-3 {
+    background-position: -86px 0;
+}
+
+.i-user-data-4 {
+    background-position: -129px 0;
+}
+
+.i-user-data-5 {
+    background-position: -172px 0;
+}
+
+.i-setting {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url("../img/sprite.png") -93px 0 no-repeat;
+    margin-right: 2px;
+    position: relative;
+    top: -1px;
+}
+
+@media (max-width: 767px) {
+    .user-data {
+        > .container {
+            padding-bottom: 35px;
+        }
+        &__item {
+            margin-left: 0;
+        }
+        &__info {
+            white-space: normal;
+        }
+        &__link {
+            right: 15px;
+        }
+    }
+}
+
+

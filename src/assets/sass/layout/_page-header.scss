@@ -1,0 +1,39 @@
+/**
+ * Page header
+ */
+
+.page-header {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    border-bottom: none;
+
+    &__row {
+        @include clearfix();
+
+        &:not(:last-child) {
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+        }
+        &.delimiter {
+            border-bottom: 1px solid #dedede;
+        }
+    }
+    &__pull-right {
+        float: right;
+    }
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .page-header {
+        &__pull-right {
+            float: none;
+            clear: both;
+        }
+    }
+}

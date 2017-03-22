@@ -1,0 +1,46 @@
+/**
+ * Range slider
+ */
+
+.range-slider-wrapper {
+    position: relative;
+}
+
+.range-slider {
+    height: 6px;
+    background: #dcdcdc;
+    border-radius: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    .ui-slider-handle {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: #373737;
+        border: none;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        &:focus {
+            outline: none;
+        }
+    }
+    &.ui-widget-content {
+        border: none;
+    }
+    .ui-slider-range {
+        background-color: #373737;
+    }
+
+    + input {
+        position: absolute;
+        right: 15px;
+        top: 100%;
+        border: none;
+        background: transparent;
+        text-align: right;
+    }
+}

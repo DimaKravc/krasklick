@@ -1,0 +1,22 @@
+/**
+ * Button
+ */
+
+.btn {
+    background: none;
+    border: 1px solid #373737;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    @include font-size(14px);
+    font-family: $bold;
+    text-transform: uppercase;
+    color: #373737;
+
+    &[type="submit"] {
+        min-width: 285px;
+    }
+    &.dark {
+        color: #FFFFFF;
+        background: #373737;
+    }
+}

@@ -1,0 +1,26 @@
+/**
+ * Footer nav
+ */
+
+.footer-nav {
+    margin: 15px 0 10px;
+    &__list {
+        padding: 0;
+        margin-bottom: 0;
+    }
+    &__item {
+        list-style-type: none;
+        margin: 5px 0;
+
+        a {
+            color: #ffffff;
+            font-family: $extra-light;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-nav {
+        text-align: center;
+    }
+}

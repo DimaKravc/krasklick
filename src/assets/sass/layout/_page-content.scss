@@ -1,0 +1,13 @@
+/**
+ * Page content
+ */
+
+.page-content {
+    margin-bottom: 45px;
+}
+
+@media (max-width: 767px) {
+    .page-content {
+        margin-bottom: 25px;
+    }
+}
