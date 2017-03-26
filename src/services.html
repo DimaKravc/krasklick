@@ -95,7 +95,7 @@
                             <div class="rate-stars">
                                 <div class="fill" style="width: 20%"></div>
                             </div>
-                            <a class="ser-list__comments-link" href="#">
+                            <a class="ser-list__comments-link" data-toggle="modal" href="#commentsModal">
                                 <span class="i-comments"></span>
                                 <span>8 комментариев</span>
                             </a>
@@ -127,7 +127,7 @@
                             <div class="rate-stars">
                                 <div class="fill" style="width: 40%"></div>
                             </div>
-                            <a class="ser-list__comments-link" href="#">
+                            <a class="ser-list__comments-link" data-toggle="modal" href="#commentsModal">
                                 <span class="i-comments"></span>
                                 <span>8 комментариев</span>
                             </a>
@@ -159,7 +159,7 @@
                             <div class="rate-stars">
                                 <div class="fill" style="width: 50%"></div>
                             </div>
-                            <a class="ser-list__comments-link" href="#">
+                            <a class="ser-list__comments-link" data-toggle="modal" href="#commentsModal">
                                 <span class="i-comments"></span>
                                 <span>8 комментариев</span>
                             </a>
@@ -191,7 +191,7 @@
                             <div class="rate-stars">
                                 <div class="fill" style="width: 80%"></div>
                             </div>
-                            <a class="ser-list__comments-link" href="#">
+                            <a class="ser-list__comments-link" data-toggle="modal" href="#commentsModal">
                                 <span class="i-comments"></span>
                                 <span>8 комментариев</span>
                             </a>
@@ -223,7 +223,7 @@
                             <div class="rate-stars">
                                 <div class="fill" style="width: 100%"></div>
                             </div>
-                            <a class="ser-list__comments-link" href="#">
+                            <a class="ser-list__comments-link" data-toggle="modal" href="#commentsModal">
                                 <span class="i-comments"></span>
                                 <span>8 комментариев</span>
                             </a>
@@ -239,4 +239,5 @@
     </div>
     {% include 'partials/pagination.html' %}
 </div>
+{% include 'partials/comments-popup.html' %}
 {% endblock %}

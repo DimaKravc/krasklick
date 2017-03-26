@@ -44,7 +44,8 @@
         padding: 10px 15px;
         text-decoration: none;
 
-        &:hover {
+        &:hover,
+        &:focus {
             text-decoration: none;
             color: inherit;
         }

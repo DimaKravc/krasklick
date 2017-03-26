@@ -90,7 +90,8 @@
                     margin: auto;
                     background: url("../img/sprite.png") -14px -96px;
                 }
-                &:hover {
+                &:hover,
+                &:focus {
                     background: transparent;
                 }
             }
@@ -141,7 +142,7 @@
 @media (max-width: 500px) {
     .pagination {
         &__inner {
-            max-width: 300px;
+            max-width: 290px;
         }
     }
 }

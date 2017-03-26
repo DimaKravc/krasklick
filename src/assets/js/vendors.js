@@ -6,4 +6,6 @@
 
 //= ../../../bower_components/bootstrap/js/tab.js
 
+//= ../../../bower_components/bootstrap/js/modal.js
+
 //= ../../../bower_components/jquery-ui/jquery-ui.min.js

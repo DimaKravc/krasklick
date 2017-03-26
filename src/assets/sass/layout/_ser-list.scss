@@ -1,5 +1,5 @@
 /**
- * Ser list
+ * Services list
  */
 
 .ser-list {
@@ -56,7 +56,8 @@
         @include font-size(13.73px);
         color: #898989;
 
-        &:hover {
+        &:hover,
+        &:focus {
             text-decoration: none;
             color: #898989;
         }
@@ -88,7 +89,8 @@
         @include font-size(14px);
         font-family: $bold;
 
-        &:hover {
+        &:hover,
+        &:focus {
             text-decoration: none;
             color: #FFFFFF;
         }

@@ -1,0 +1,76 @@
+/**
+ * Modal service
+ */
+
+.m-ser {
+    max-width: 354px;
+    float: left;
+
+    &__figure {
+        margin-bottom: 20px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    &__content {
+        border-bottom: 1px solid #dedede;
+        padding-bottom: 15px;
+
+        h3 {
+            @include font-size(23px);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        dl {
+            margin-bottom: 8px;
+
+            dt {
+                font-family: $semi-bold;
+                display: inline-block;
+                font-weight: normal;
+            }
+            dd {
+                display: inline-block;
+            }
+        }
+    }
+    .rate-stars {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__comments-link {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px;
+        @include font-size(13.73px);
+        color: #898989;
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    &__total {
+        text-align: center;
+
+        @include font-size(32.11px);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .m-ser {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 991px) {
+    .m-ser {
+        float: none;
+        margin: auto;
+    }
+}
