@@ -11,3 +11,5 @@
 //= ../../../bower_components/jquery-ui/jquery-ui.min.js
 
 //= ../../../bower_components/owl.carousel/dist/owl.carousel.min.js
+
+//= ../../../bower_components/select2/dist/js/select2.min.js

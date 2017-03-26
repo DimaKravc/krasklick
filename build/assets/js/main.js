@@ -70,6 +70,9 @@ jQuery(document).ready(function ($) {
                 autoplayTimeout: 3000,
                 autoplayHoverPause: true
             });
+        },
+        select2: function () {
+            $('[data-js="customSelect"]').select2();
         }
     });
 });

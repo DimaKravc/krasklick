@@ -2,7 +2,8 @@
 @import './bower_components/bootstrap/dist/css/bootstrap.min',
 		'./bower_components/bootstrap/dist/css/bootstrap-theme.min',
 		'./bower_components/jquery-ui/themes/smoothness/jquery-ui.min',
-		'./bower_components/owl.carousel/dist/assets/owl.carousel.min';
+		'./bower_components/owl.carousel/dist/assets/owl.carousel.min',
+		'./bower_components/select2/dist/css/select2.min';
 
 // Base
 @import 'base/config',
@@ -48,4 +49,5 @@
         'components/input-file',
         'components/range-slider',
         'components/rate-stars',
-        'components/submit-ad';
+        'components/submit-ad',
+        'components/customs-select';

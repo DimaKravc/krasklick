@@ -12,7 +12,7 @@
         text-align: center;
 
         > a {
-            vertical-align: middle;
+            vertical-align: bottom;
             display: inline-block;
             padding: 0 5px;
 
@@ -63,7 +63,7 @@
 
 @media (max-width: 767px) {
     .footer-carousel {
-        margin-bottom: 0;
+        margin: 25px auto 0;
 
         .owl-item {
             height: 55px;
