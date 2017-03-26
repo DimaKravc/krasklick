@@ -11655,6 +11655,12 @@ label {
   border-color: #6e6e6e;
 }
 
+.select2-container .select2-selection--single {
+  outline: none;
+  -webkit-transition: border-color .13s ease-in;
+  transition: border-color .13s ease-in;
+}
+
 .select2-container.select2-container--open .select2-selection--single {
   border-color: #d90033;
 }
@@ -11688,6 +11694,11 @@ label {
 
 .select2-search--dropdown .select2-search__field {
   padding: 5px;
+  outline: none;
+}
+
+.select2-search--dropdown .select2-search__field:focus {
+  border-color: #d90033;
 }
 
 .select2-results__option {

@@ -7,6 +7,10 @@
         height: 48px;
         border-color: #6e6e6e;
     }
+    .select2-selection--single {
+        outline: none;
+        transition: border-color .13s ease-in;
+    }
     &.select2-container--open {
         .select2-selection--single {
             border-color: #d90033;
@@ -42,6 +46,11 @@
 
     .select2-search__field {
         padding: 5px;
+        outline: none;
+
+        &:focus {
+            border-color: #d90033;
+        }
     }
 }
 
