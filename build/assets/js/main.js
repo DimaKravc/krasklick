@@ -61,6 +61,15 @@ jQuery(document).ready(function ($) {
                     $(this).addClass('active');
                 }
             })
+        },
+        logoSlider: function () {
+            $('.footer-carousel').owlCarousel({
+                items: 3,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true
+            });
         }
     });
 });
