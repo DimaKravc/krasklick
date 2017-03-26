@@ -12629,6 +12629,7 @@ label {
 
   .footer-carousel {
     margin-top: 30px;
+    max-width: 290px;
   }
 
   .footer-carousel .owl-item {
