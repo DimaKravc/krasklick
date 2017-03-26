@@ -4,6 +4,7 @@
 
 .site-header {
     box-shadow: 0 1px 1px 0 #dadada;
+    position: relative;
 
     &__navbar {
         float: left;
@@ -19,7 +20,7 @@
     background: $accent-color;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .site-header {
         &__navbar-collapse {
             display: block !important;
@@ -29,7 +30,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .site-header {
         &__navbar {
             float: none;

@@ -52,7 +52,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .promo-banner {
         [class*="i-services-"] {
             background-position: 0 -31px;
@@ -72,6 +72,11 @@
         .i-services-6 {
             background-position: -121px -31px;
         }
+        .submit-ad {
+            background: none;
+            box-shadow: 0 0 0 2px #ffffff inset;
+            color: #ffffff;
+        }
         .site-auth-menu {
             &__item {
                 a {
@@ -79,6 +84,7 @@
                 }
             }
         }
+
     }
 }
 

@@ -1,17 +1,18 @@
 {% macro init(data) %}
 <header class="site-header{{' promo-banner' if data.banner.active}}"
         style="background-image: url('{{data.banner.img if data.banner.active}}')">
-    <div class="container site-nav-wrapper">
-        <div class="site-header__navbar">
-            <div class="site-logo">
-                <h1><a href="#"><span class="accent-color">крас</span>клик</a></h1>
-            </div>
-            <button aria-controls="bs-navbar"
-                    aria-expanded="false"
-                    class="toggle-navbar"
-                    data-target="#bs-navbar"
-                    data-toggle="collapse"
-                    type="button">
+    <div class="site-nav-wrapper">
+        <div class="container">
+            <div class="site-header__navbar">
+                <div class="site-logo">
+                    <h1><a href="#"><span class="accent-color">крас</span>клик</a></h1>
+                </div>
+                <button aria-controls="bs-navbar"
+                        aria-expanded="false"
+                        class="toggle-navbar"
+                        data-target="#bs-navbar"
+                        data-toggle="collapse"
+                        type="button">
             <span class="toggle-navbar__hamburger">
                 <span></span>
                 <span></span>
@@ -21,65 +22,67 @@
                 <span></span>
                 <span></span>
             </span>
-            </button>
-        </div>
-        <div class="site-header__navbar-collapse collapse" id="bs-navbar">
-            <nav class="site-nav">
-                <ul class="site-nav__list panel-group" id="accordion">
-                    {% for item in data.nav %}
-                    {% if item.sub_menu %}
-                    <li class="site-nav__item panel has-sub-menu{{' active' if item.active}}"
-                        aria-controls="services-list-{{loop.index}}"
-                        aria-expanded="false"
-                        data-target="#services-list-{{loop.index}}"
-                        data-toggle="collapse"
-                        data-parent="#accordion">
-                    {% else %}
-                    <li class="site-nav__item{{' active' if item.active}}">
-                    {% endif %}
-                        <a href="#" onclick="return false">
-                            <div class="i-wrap">
-                                <span class="{{item.icon}}"></span>
-                            </div>
-                            <span></span>
-                        </a>
-
+                </button>
+            </div>
+            <div class="site-header__navbar-collapse collapse" id="bs-navbar">
+                <nav class="site-nav">
+                    <ul class="site-nav__list panel-group" id="accordion">
+                        {% for item in data.nav %}
                         {% if item.sub_menu %}
-                        <div class="sub-menu container collapse" id="services-list-{{loop.index}}">
-                            <div class="row">
-                                <div class="col-xs-12 col-md-4">
-                                    <ul class="sub-menu__list">
-                                        {% set step = (item.sub_menu.length / 3) | round(0, "ceil") %}
-                                        {% for item_sub in item.sub_menu %}
-                                        <li class="sub-menu__item {{'active' if item_sub.active}}">
-                                            <a href="#">{{item_sub.name}}</a>
-                                        </li>
-                                        {% if loop.index === step %}
-                                        {% set step = step + step %}
-                                    </ul>
+                        <li class="site-nav__item panel has-sub-menu{{' active' if item.active}}"
+                            aria-controls="services-list-{{loop.index}}"
+                            aria-expanded="false"
+                            data-target="#services-list-{{loop.index}}"
+                            data-toggle="collapse"
+                            data-parent="#accordion">
+                            {% else %}
+                        <li class="site-nav__item{{' active' if item.active}}">
+                            {% endif %}
+                            <a href="#" onclick="return false">
+                                <div class="i-wrap">
+                                    <span class="{{item.icon}}"></span>
                                 </div>
-                                <div class="col-xs-12 col-md-4">
-                                    <ul class="sub-menu__list">
-                                        {% endif %}
-                                        {% endfor %}
-                                    </ul>
+                                <span></span>
+                            </a>
+
+                            {% if item.sub_menu %}
+                            <div class="sub-menu container collapse" id="services-list-{{loop.index}}">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-4">
+                                        <ul class="sub-menu__list">
+                                            {% set step = (item.sub_menu.length / 3) | round(0, "ceil") %}
+                                            {% for item_sub in item.sub_menu %}
+                                            <li class="sub-menu__item {{'active' if item_sub.active}}">
+                                                <a href="#">{{item_sub.name}}</a>
+                                            </li>
+                                            {% if loop.index === step %}
+                                            {% set step = step + step %}
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-12 col-md-4">
+                                        <ul class="sub-menu__list">
+                                            {% endif %}
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+                <a class="submit-ad" href="#">Подать объявление</a>
+                <div class="site-auth-menu">
+                    <ul class="site-auth-menu__list{{' entered' if data.log_in.status}}">
+                        {% if data.log_in.status %}
+                        <li class="site-auth-menu__item"><a href="#">{{data.log_in.email}}</a></li>
+                        {% else %}
+                        <li class="site-auth-menu__item"><a href="#">Вход</a></li>
+                        <li class="site-auth-menu__item"><a href="#">Регистрация</a></li>
                         {% endif %}
-                    </li>
-                    {% endfor %}
-                </ul>
-            </nav>
-            <div class="site-auth-menu">
-                <ul class="site-auth-menu__list{{' entered' if data.log_in.status}}">
-                    {% if data.log_in.status %}
-                    <li class="site-auth-menu__item"><a href="#">{{data.log_in.email}}</a></li>
-                    {% else %}
-                    <li class="site-auth-menu__item"><a href="#">Вход</a></li>
-                    <li class="site-auth-menu__item"><a href="#">Регистрация</a></li>
-                    {% endif %}
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

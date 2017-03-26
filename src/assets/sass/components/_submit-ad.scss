@@ -1,0 +1,40 @@
+/**
+ * Submit advertisement
+ */
+
+.submit-ad {
+    display: block;
+    float: left;
+    font-family: $bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    padding: 12px 15px 10px;
+    background: #373737;
+    border-radius: 4px;
+    @include font-size(15px);
+    letter-spacing: 0.2px;
+    margin: 26px 5px 26px 5px;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 1199px) {
+    .submit-ad {
+        @include font-size(14px);
+        margin: 26px 0;
+        padding: 12px 10px 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .submit-ad {
+        float: none;
+        margin: 20px 0;
+    }
+}

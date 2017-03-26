@@ -117,7 +117,7 @@
                 }
             ],
             "log_in": {
-                "status": true,
+                "status": false,
                 "email": "krasclik@gmail.com"
             },
             "banner": {

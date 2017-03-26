@@ -6,7 +6,7 @@
     position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .site-nav {
         float: left;
 
@@ -28,7 +28,7 @@
             }
             > a {
                 display: block;
-                padding: 19px 25px;
+                padding: 19px 20px;
                 line-height: 55px;
             }
             .i-wrap {
@@ -126,26 +126,15 @@
 @media (max-width: 1199px) {
     .site-nav {
         &__item {
-            a {
-                padding-left: 15px;
-                padding-right: 15px;
+            > a {
+                padding-left: 8px;
+                padding-right: 8px;
             }
         }
     }
 }
 
 @media (max-width: 991px) {
-    .site-nav {
-        &__item {
-            a {
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-        }
-    }
-}
-
-@media (max-width: 767px) {
     .site-nav {
         margin-left: -15px;
         margin-right: -15px;
