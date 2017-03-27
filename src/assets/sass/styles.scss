@@ -3,7 +3,9 @@
 		'./bower_components/bootstrap/dist/css/bootstrap-theme.min',
 		'./bower_components/jquery-ui/themes/smoothness/jquery-ui.min',
 		'./bower_components/owl.carousel/dist/assets/owl.carousel.min',
-		'./bower_components/select2/dist/css/select2.min';
+		'./bower_components/select2/dist/css/select2.min',
+		'./bower_components/animate.css/animate.min',
+		'./bower_components/swiper/dist/css/swiper.min';
 
 // Base
 @import 'base/config',
@@ -37,7 +39,9 @@
         'layout/pagintation',
         'layout/modal-comments',
         'layout/m-ser',
-        'layout/m-comments';
+        'layout/m-comments',
+        'layout/home-slider',
+        'layout/sticky-header';
 
 // Components
 @import 'components/site-logo',
@@ -50,4 +54,5 @@
         'components/range-slider',
         'components/rate-stars',
         'components/submit-ad',
-        'components/customs-select';
+        'components/customs-select',
+        'components/css-spinner';

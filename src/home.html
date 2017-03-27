@@ -1,4 +1,49 @@
 {% extends "home-layout.html" %}
 
+{% import 'macros/header.html' as header %}
+
 {% block content %}
+{{ header.init(home.header) }}
+<div class="swiper-container home-slider">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('assets/img/slide01.jpg')">
+            <div class="container">
+                <a href="#" class="swiper-slide__cat" data-caption-animate="fadeInDown">WE BELIEVE HARD WORK</a>
+                <h2 class="swiper-slide__title" data-caption-animate="fadeInUp" data-caption-delay="150"><a href="#">WE BELIEVE IN DESIGN, <br>STRATEGY AND WEB<br> TECHNOLOGY</a></h2>
+                <a href="#" class="swiper-slide__btn" data-caption-animate="fadeInUp" data-caption-delay="300">подробнее</a>
+            </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url('assets/img/slide02.jpg')">
+            <div class="container">
+                <a href="#" class="swiper-slide__cat" data-caption-animate="fadeInUp">WE BELIEVE HARD WORK</a>
+                <h2 class="swiper-slide__title" data-caption-animate="fadeInUp" data-caption-delay="200"><a href="#">WE BELIEVE IN DESIGN, STRATEGY AND WEB TECHNOLOGY</a></h2>
+                <a href="#" class="swiper-slide__btn" data-caption-animate="fadeInUp" data-caption-delay="400">подробнее</a>
+            </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url('assets/img/slide03.jpg')">
+            <div class="container">
+                <a href="#" class="swiper-slide__cat" data-caption-animate="fadeInLeft">WE BELIEVE HARD WORK</a>
+                <h2 class="swiper-slide__title" data-caption-animate="fadeInRight" data-caption-delay="200"><a href="#">WE BELIEVE IN DESIGN</a></h2>
+                <a href="#" class="swiper-slide__btn" data-caption-animate="fadeInLeft" data-caption-delay="400">подробнее</a>
+            </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url('assets/img/slide04.jpg')">
+            <div class="container">
+                <a href="#" class="swiper-slide__cat" data-caption-animate="fadeInDown">WE BELIEVE HARD WORK</a>
+                <h2 class="swiper-slide__title" data-caption-animate="fadeInLeft" data-caption-delay="200"><a href="#">STRATEGY AND WEB TECHNOLOGY</a></h2>
+                <a href="#" class="swiper-slide__btn" data-caption-animate="fadeInUp" data-caption-delay="400">подробнее</a>
+            </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url('assets/img/slide05.jpg')">
+            <div class="container">
+                <a href="#" class="swiper-slide__cat" data-caption-animate="fadeInLeft">WE BELIEVE HARD WORK</a>
+                <h2 class="swiper-slide__title" data-caption-animate="fadeInLeft" data-caption-delay="200"><a href="#">STRATEGY AND WEB TECHNOLOGY</a></h2>
+                <a href="#" class="swiper-slide__btn" data-caption-animate="fadeInLeft" data-caption-delay="400">подробнее</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
 {% endblock %}

@@ -13,3 +13,6 @@
 //= ../../../bower_components/owl.carousel/dist/owl.carousel.min.js
 
 //= ../../../bower_components/select2/dist/js/select2.min.js
+
+//= ../../../bower_components/swiper/dist/js/swiper.jquery.min.js
+

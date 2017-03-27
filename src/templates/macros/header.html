@@ -1,5 +1,5 @@
 {% macro init(data) %}
-<header class="site-header{{' promo-banner' if data.banner.active}}"
+<header class="site-header{{' promo-banner' if data.banner.active}}{{' sticky-header' if data.sticky}}"
         style="background-image: url('{{data.banner.img if data.banner.active}}')">
     <div class="site-nav-wrapper">
         <div class="container">

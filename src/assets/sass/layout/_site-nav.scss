@@ -81,7 +81,6 @@
         position: absolute;
         left: 0;
         right: 0;
-        width: 100%;
         background: rgba(0, 0, 0, 0.83);
         transition: all .2s ease-in;
         padding-top: 40px;
@@ -221,6 +220,8 @@
         }
     }
     .sub-menu {
+        width: 100%;
+
         > .row {
             margin-top: 20px;
             margin-bottom: 10px;

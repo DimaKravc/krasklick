@@ -1,0 +1,88 @@
+/**
+ * Sticky header
+ */
+
+.sticky-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: none;
+
+    .site-logo {
+        a,
+        a span {
+            color: #FFFFFF;
+            font-family: $bold;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .sticky-header {
+        [class*="i-services-"] {
+            background-position: 0 -31px;
+        }
+        .i-services-2 {
+            background-position: -17px -31px;
+        }
+        .i-services-3 {
+            background-position: -37px -31px;
+        }
+        .i-services-4 {
+            background-position: -69px -31px;
+        }
+        .i-services-5 {
+            background-position: -88px -31px;
+        }
+        .i-services-6 {
+            background-position: -121px -31px;
+        }
+        .site-nav {
+            &__item {
+                &.has-sub-menu {
+                    &:hover {
+                        .i-wrap {
+                            box-shadow: 0 -2px 0 0 $base-color inset;
+                        }
+                    }
+                }
+                &.active,
+                &:hover {
+                    [class*="i-services-"] {
+                        background-position: 0 -62px;
+                    }
+                    .i-services-2 {
+                        background-position: -17px -62px;
+                    }
+                    .i-services-3 {
+                        background-position: -37px -62px;
+                    }
+                    .i-services-4 {
+                        background-position: -69px -62px;
+                    }
+                    .i-services-5 {
+                        background-position: -88px -62px;
+                    }
+                    .i-services-6 {
+                        background-position: -121px -62px;
+                    }
+                }
+            }
+        }
+        .submit-ad {
+            background: none;
+            box-shadow: 0 0 0 2px #ffffff inset;
+            color: #ffffff;
+        }
+        .site-auth-menu {
+            &__item {
+                a {
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+    }
+}
+

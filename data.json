@@ -250,5 +250,127 @@
                 "img": "assets/img/banner01.jpg"
             }
         }
+    },
+    "home": {
+        "header": {
+            "nav": [
+                {
+                    "icon": "i-services-1",
+                    "text": "",
+                    "active": false,
+                    "sub_menu": [
+                        {
+                            "name": "массаж рук"
+                        },
+                        {
+                            "name": "массаж ступней"
+                        },
+                        {
+                            "name": "наращивание акрил, гель"
+                        },
+                        {
+                            "name": "нарщивание акрил, гель (фрэнч)"
+                        },
+                        {
+                            "name": "парафинотерапия рук"
+                        },
+                        {
+                            "name": "парафинотераспия спупней"
+                        },
+                        {
+                            "name": "педикюр аппаратный"
+                        },
+                        {
+                            "name": "педикюр бразильский"
+                        },
+                        {
+                            "name": "педикюр женский"
+                        },
+                        {
+                            "name": "педикюр мужской"
+                        },
+                        {
+                            "name": "пилинг стоп"
+                        },
+                        {
+                            "name": "покрытие Shellac"
+                        },
+                        {
+                            "name": "покрытие Shellac (фрэнч)"
+                        },
+                        {
+                            "name": "покрытие VINYLUX"
+                        },
+                        {
+                            "name": "покрытие VINYLUX (фрэнч)"
+                        },
+                        {
+                            "name": "покрытие лаком"
+                        }
+                    ]
+                },
+                {
+                    "icon": "i-services-2",
+                    "text": "",
+                    "active": false,
+                    "sub_menu": false
+                },
+                {
+                    "icon": "i-services-3",
+                    "text": "",
+                    "active": false,
+                    "sub_menu": [
+                        {
+                            "name": "пилинг стоп"
+                        },
+                        {
+                            "name": "покрытие Shellac"
+                        },
+                        {
+                            "name": "покрытие Shellac (фрэнч)"
+                        },
+                        {
+                            "name": "покрытие VINYLUX"
+                        },
+                        {
+                            "name": "покрытие VINYLUX (фрэнч)"
+                        },
+                        {
+                            "name": "покрытие лаком"
+                        }
+                    ]
+                },
+                {
+                    "icon": "i-services-4",
+                    "text": "",
+                    "active": false,
+                    "sub_menu": false
+                },
+                {
+                    "icon": "i-services-5",
+                    "text": "",
+                    "active": false,
+                    "sub_menu": false
+                },
+                {
+                    "icon": "i-services-6",
+                    "text": "",
+                    "active": false,
+                    "sub_menu": false
+                }
+            ],
+            "log_in": {
+                "status": false,
+                "email": "krasclik@gmail.com"
+            },
+            "banner": {
+                "active": false,
+                "caption": "красивая укладка",
+                "strong": "это просто",
+                "btn": "подробнее",
+                "img": "assets/img/banner01.jpg"
+            },
+            "sticky": true
+        }
     }
 }

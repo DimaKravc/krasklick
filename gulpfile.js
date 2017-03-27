@@ -2,6 +2,7 @@ var gulp     = require('gulp');
 var rigger   = require('gulp-rigger');
 var data     = require('gulp-data');
 var nunjucks = require('gulp-nunjucks-render');
+var cssprettify = require('gulp-jsbeautifier');
 var prettify = require('gulp-prettify');
 var sass     = require('gulp-sass');
 var prefixer = require('gulp-autoprefixer');
@@ -69,6 +70,10 @@ gulp.task('css', function () {
         .pipe(sass())
         .pipe(prefixer(['ie >= 9', '> 5%']))
         .pipe(gcmq())
+        .pipe(cssprettify({
+            indent_level: 4,
+            eol: "\r\n"
+        }))
         .pipe(gulp.dest(paths.dest.css));
 });
 
