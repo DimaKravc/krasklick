@@ -14506,6 +14506,11 @@ label {
     text-decoration: none;
 }
 
+.ad-list__utils-menu>a:hover,
+.ad-list__utils-menu>a:focus {
+    text-decoration: none;
+}
+
 .i-setting-gray {
     display: inline-block;
     width: 19px;
