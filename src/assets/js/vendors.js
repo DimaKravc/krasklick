@@ -16,3 +16,5 @@
 
 //= ../../../bower_components/swiper/dist/js/swiper.jquery.min.js
 
+//= ../../../bower_components/bootstrap-star-rating/js/star-rating.min.js
+

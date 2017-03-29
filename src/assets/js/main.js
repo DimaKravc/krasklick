@@ -127,6 +127,19 @@ jQuery(document).ready(function ($) {
         },
         select2: function () {
             $('[data-js="customSelect"]').select2();
+        },
+        starRating: function () {
+            $('[data-js="star-rating"]').rating({
+                min: 0,
+                max: 5,
+                step: 0.5,
+                animate: false,
+                showClear: true,
+                showCaption: false,
+                size: 'sm',
+                emptyStar: '<span class="i-empty-star"></span>',
+                filledStar: '<span class="i-filed-star"></span>'
+            });
         }
     });
 });

@@ -19,6 +19,9 @@
         border-bottom: 1px solid #dedede;
         padding-bottom: 15px;
 
+        &_style_no-border {
+            border-bottom: none;
+        }
         h3 {
             @include font-size(23px);
             margin-bottom: 10px;
@@ -74,3 +77,4 @@
         margin: auto;
     }
 }
+

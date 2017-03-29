@@ -5,7 +5,8 @@
 		'./bower_components/owl.carousel/dist/assets/owl.carousel.min',
 		'./bower_components/select2/dist/css/select2.min',
 		'./bower_components/animate.css/animate.min',
-		'./bower_components/swiper/dist/css/swiper.min';
+		'./bower_components/swiper/dist/css/swiper.min',
+		'./bower_components/bootstrap-star-rating/css/star-rating.min';
 
 // Base
 @import 'base/config',
@@ -41,7 +42,8 @@
         'layout/m-ser',
         'layout/m-comments',
         'layout/home-slider',
-        'layout/sticky-header';
+        'layout/sticky-header',
+        'layout/m-reply';
 
 // Components
 @import 'components/site-logo',

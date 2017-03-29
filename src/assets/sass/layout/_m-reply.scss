@@ -1,0 +1,49 @@
+/**
+ * Modal reply
+ */
+
+.m-reply {
+    float: right;
+    width: 638px;
+
+    &__form {
+        &__inner-overlay {
+            padding: 25px 37px;
+            background: #f7f7f7;
+            margin-bottom: 18px;
+        }
+        .form-control {
+            color: $base-color;
+        }
+        .btn {
+            width: 100%;
+            border: none;
+            background: #333333;
+            color: #ffffff;
+            @include font-size(16px);
+            font-family: $regular;
+            line-height: 1;
+            padding: 10px 20px;
+            border-radius: 0;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .m-reply {
+        width: 520px;
+    }
+}
+
+@media (max-width: 991px) {
+    .m-reply {
+        float: none;
+        margin: auto;
+        width: 100%;
+
+        &__form__inner-overlay {
+            padding: 15px 27px;
+        }
+    }
+}
+

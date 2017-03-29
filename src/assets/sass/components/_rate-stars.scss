@@ -17,3 +17,38 @@
         background: url("../img/stars-fill.png") 0 0;
     }
 }
+
+.rating {
+    &-container {
+        @include font-size(16px);
+        position: relative;
+
+        .clear-rating {
+            position: absolute;
+            top: 0;
+            right: 100%;
+            cursor: not-allowed;
+            font-size: 100%;
+            opacity: 0;
+            z-index: 22;
+        }
+    }
+    .empty-stars,
+    .filled-stars {
+        cursor: pointer;
+    }
+}
+
+.i-empty-star {
+    width: 28px;
+    height: 27px;
+    background: url("../img/single-empty-star.png") no-repeat center;
+    display: block;
+}
+
+.i-filed-star {
+    width: 28px;
+    height: 27px;
+    background: url("../img/single-filed-star.png") no-repeat center;
+    display: block;
+}
