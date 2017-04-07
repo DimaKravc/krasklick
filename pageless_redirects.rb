@@ -74,8 +74,10 @@ module Jekyll
           file.write(alias_template(destination_path))
         end
 
-        (alias_index_path.split('/').size + 1).times do |sections|
-          @site.static_files << PagelessRedirectFile.new(@site, @site.dest, alias_index_path.split('/')[1, sections + 1].join('/'), '')
+        index_path = alias_index_path.split('/')[0, sections + 1].join('/')
+        next if index_path.empty?
+
+        @site.static_files << Jekyll::PagelessRedirectFile.new(@site, @site.dest, index_path, '')
         end
       end
     end
