@@ -1,0 +1,5 @@
+{
+	"some-page"        : "/destination-page",
+	"yet-another-page" : "http://example.org/destination-page",
+	"ninth-page"       : "/destination-page"
+}
